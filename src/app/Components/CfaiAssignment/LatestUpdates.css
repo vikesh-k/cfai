@@ -1,0 +1,173 @@
+.updatescontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0e1b2c;
+  padding: 72px;
+  font-weight: 600;
+  gap: 48px;
+}
+
+.updates__title {
+  font-size: 42px;
+  line-height: 1.3;
+  color: #0e1b2c;
+}
+
+.updates__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.updates__applycard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 570px;
+  height: 500px;
+  background-color: #fdaf4d;
+  padding: 42px;
+  border-radius: 10px;
+  box-shadow: -5px 4px 50px 0px #0000001a;
+  background-image: url("/cfai/updates3.svg");
+  background-repeat: no-repeat;
+  background-position-x: 120%;
+  background-position-y: 120%;
+  overflow: hidden;
+}
+
+.updates__carditemtitle {
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+.updates__carditemtext {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 342px;
+}
+
+.updates__applybtn {
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 150px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 1;
+  color: #ff7361;
+  margin-top: 120px;
+}
+
+.updates__carditemslist {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.updates__carditem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  box-shadow: -5px 4px 50px 0px #0000001a;
+  background-color: #ffffff;
+  width: 270px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.updates_cardimgwrap {
+  width: 180px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.updates__cardimg {
+  width: 120px;
+  height: auto;
+}
+
+.updates__carditemagency {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  width: 241px;
+  margin-bottom: 72px;
+}
+
+.updates__carditemcert {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #226cf5;
+  margin-bottom: 8px;
+}
+
+.updates__carditemdates {
+  color: #64647a;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.updates__morebtn {
+  color: #ff7361;
+  font-size: 16px;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .updatescontainer {
+    padding-inline: var(--padding-global-inline-mobile);
+    overflow: hidden;
+  }
+
+  .updates__title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .updates__content {
+    width: 100%;
+  }
+
+  .updates__applycard {
+    flex-shrink: 0;
+    width: 300px;
+    padding: 24px;
+    background-position-x: 40%;
+    background-position-y: 120%;
+  }
+
+  .updates__carditemtitle {
+    font-size: 26px;
+    margin-top: 32px;
+    line-height: 1.3;
+  }
+
+  .updates__carditemtext {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-right: 28px;
+  }
+
+  .updates__applybtn {
+    width: 100%;
+  }
+}

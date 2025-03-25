@@ -1,0 +1,120 @@
+.infocontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1b2c;
+  font-weight: 600;
+  margin-top: 120px;
+  position: relative;
+  height: 200px;
+}
+
+.info__stylediv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -90;
+  background-color: #0e1b2c;
+  border-bottom-left-radius: 0 0;
+  border-bottom-right-radius: 0 0;
+  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+  transform: scaleX(1.2);
+  z-index: -1;
+}
+
+.info__title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.info__datainput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 56px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.info__email {
+  width: 300px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #d0d0d0;
+  background-color: #ffffff;
+  color: #64647a;
+  padding: 12px 16px;
+}
+
+.info__interestselect {
+  width: 300px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #d0d0d0;
+  background-color: #ffffff;
+  color: #64647a;
+  padding: 12px 16px;
+  appearance: none;
+  background-image: url("/cfai/submit1.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 16px);
+  background-position-y: center;
+  font-size: 16px;
+}
+
+.info__subscribe {
+  box-shadow: 0px 8px 30px 0px #0a021733;
+  background: linear-gradient(263.28deg, #ff6a56 1.1%, #fdaf4d 141.83%);
+  height: 48px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.infocontainer_wrapper {
+  position: relative;
+}
+
+.info__imgwrap {
+  position: absolute;
+  top: -120px;
+  left: 15%;
+  z-index: 1;
+}
+
+.info__img {
+  width: 121px;
+  height: 131px;
+}
+
+@media only screen and (max-width: 600px) {
+  .infocontainer {
+    padding-inline: var(--padding-global-inline-mobile);
+    height: 400px;
+  }
+
+  .info__stylediv {
+    transform: scaleX(2.1);
+  }
+
+  .info__title {
+    font-size: 26px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .info__subscribe {
+    width: 300px;
+  }
+
+  .info__imgwrap {
+    top: -140px;
+    left: 8%
+  }
+}
